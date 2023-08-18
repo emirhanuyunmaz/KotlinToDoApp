@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/alert_editTextTodoComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TODO Comment"
+        android:layout_margin="12sp"
+        ></EditText>
+
+    <RelativeLayout
+        android:id="@+id/relativeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/alert_editTextTodoDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TODO Date"
+            android:layout_margin="12sp"
+
+            ></EditText>
+        <ImageView
+            android:id="@+id/alert_imageTodoDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/alert_editTextTodoDate"
+            android:layout_alignBottom="@+id/alert_editTextTodoDate"
+            android:layout_alignRight="@+id/alert_editTextTodoDate"
+            android:src="@drawable/calendar_asset"
+            android:clickable="true"
+            android:onClick="setDate"
+            ></ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/alert_editTextTodoTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TODO Time"
+            android:layout_margin="12sp"
+            ></EditText>
+        <ImageView
+            android:id="@+id/alert_imageTodoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/alert_editTextTodoTime"
+            android:layout_alignBottom="@+id/alert_editTextTodoTime"
+            android:layout_alignRight="@+id/alert_editTextTodoTime"
+            android:src="@drawable/time_asset"
+            android:clickable="true"
+            android:onClick="setTime"
+            ></ImageView>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
